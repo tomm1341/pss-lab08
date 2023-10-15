@@ -14,4 +14,4 @@ Create from scratch a class `RestrictedBankAccount extends AbstractBankAccount`,
 
 Answer the following question:
 
-Is this design in you opinion better or worse than the previous one? Why?
+Is this design in your opinion better or worse than the previous one? Why?

@@ -19,4 +19,29 @@ public abstract class AbstractBankAccount implements BankAccount{
         this.balance = balance;
         this.transactions = 0;
     }
+
+    public abstract void deposit(final int id, final double amount);
+
+    public abstract void depositFromATM(final int id, final double amount);
+
+    public abstract void withdraw(final int id, final double amount);
+
+    public abstract void withdrawFromATM(final int id, final double amount);
+
+    public abstract void chargeManagementFees(final int id);
+    
+
+    public int getTransactionsCount() {
+        return transactions;
+    }
+
+    public AccountHolder getAccountHolder() {
+        return holder;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+
+
 }

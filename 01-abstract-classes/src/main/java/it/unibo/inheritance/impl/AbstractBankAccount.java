@@ -47,5 +47,9 @@ public abstract class AbstractBankAccount implements BankAccount{
         return this.getBalance() > amount;
     }
 
+    protected double computeFee(final int id, final int transactions) {
+        return this.getTransactionsCount() * ATM_TRANSACTION_FEE + MANAGEMENT_FEE;
+    }
 
+    
 }

@@ -29,7 +29,7 @@ public abstract class AbstractBankAccount implements BankAccount{
     public abstract void withdrawFromATM(final int id, final double amount);
 
     public abstract void chargeManagementFees(final int id);
-    
+
 
     public int getTransactionsCount() {
         return transactions;
@@ -41,6 +41,10 @@ public abstract class AbstractBankAccount implements BankAccount{
 
     public double getBalance() {
         return balance;
+    }
+
+    protected boolean isWithDrawAllowed(final double amount) {
+        return this.getBalance() > amount;
     }
 
 
